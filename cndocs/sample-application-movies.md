@@ -419,6 +419,7 @@ export default class SampleAppMovies extends Component {
         data={this.state.data}
         renderItem={this.renderMovie}
         style={styles.list}
+        keyExtractor={(item, index) => item.id}
       />
     );
   }
